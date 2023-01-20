@@ -1,5 +1,10 @@
 <h1>{{title}}</h1>
 
+<h2 *ngIf="animeErase; else notErase"> Anime Borrado -> <small>{{animeErase}}</small></h2>
+<ng-template #notErase>
+  <h2> No ha Borrado nada </h2>
+</ng-template>
+
 <ul>
   <li *ngFor="let item of animes; let i = index">
     {{ i + 1}} {{item}}

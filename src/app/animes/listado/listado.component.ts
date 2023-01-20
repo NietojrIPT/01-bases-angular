@@ -8,16 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class ListadoComponent   {
 title: string = 'Listado de Animes'
 animes: string[] = ['Horimiya', 'Sono Visque', 'Full Metal', 'Deamons Slider'];
+animeErase: string = '';
 
 
 eraseAnime(){
-  console.log('borrando');
-  if (this.animes.length > 0) {
-    this.animes.pop();
-  } else {
-    alert('No hay mas anime para borrar');
-  }
-
+     this.animeErase = this.animes.pop() || '';
 }
 
 }
