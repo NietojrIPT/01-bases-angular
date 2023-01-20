@@ -5,21 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
-  title: string = 'Contador App';
-  contador: number = 0;
+export class AppComponent  {
 
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
-
-  sumar(){
-    this.contador++;
-  }
-  restar(){
-    this.contador--;
-  }
 }
 
 
