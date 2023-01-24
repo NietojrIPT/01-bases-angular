@@ -1,6 +1,6 @@
 import { ThrowStmt } from "@angular/compiler";
 import { Injectable } from "@angular/core";
-import { PersonajeRq } from "../interfaces/dbz.interface";
+import { PersonajeRq } from '../interfaces/dbz.interface';
 
 
 
@@ -26,9 +26,10 @@ export class DbzService{
         return [...this._personajes];
       }
 
-    constructor(){
-        console.log('service init');
-        
-    }
+    constructor(){}
+    
+      agragarPersonaje(person: PersonajeRq){
+        this._personajes.push(person)
+      }
 }
 
